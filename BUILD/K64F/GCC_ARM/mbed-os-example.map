@@ -1,0 +1,393 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libstdc++.a(new_handler.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/frameworks/greentea-client/source/greentea_metrics.o (std::nothrow)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libm.a(lib_a-s_ceil.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/lorawan/lorastack/phy/LoRaPHY.o (ceil)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libm.a(lib_a-s_floor.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/lorawan/lorastack/phy/LoRaPHY.o (floor)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libm.a(lib_a-s_fpclassify.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/frameworks/unity/source/unity.o (__fpclassifyd)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libm.a(lib_a-sf_fpclassify.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/frameworks/unity/source/unity.o (__fpclassifyf)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-abs.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/frameworks/nanostack-libservice/source/nsdynmemLIB/nsdynmemLIB.o (abs)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-assert.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/nanostack/nanostack-hal-mbed-cmsis-rtos/ns_hal_init.o (__assert_func)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-calloc.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/mbedtls/mbed-crypto/platform/TARGET_PSA/COMPONENT_PSA_SRV_IMPL/psa_crypto.o (calloc)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-ctype_.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/frameworks/mbed-client-cli/source/ns_cmdline.o (__ctype_ptr__)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-difftime.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/cellular/framework/AT/AT_CellularSMS.o (difftime)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-errno.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/platform/mbed_retarget.o (__errno)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fclose.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_nvm_store.o (fclose)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fflush.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fclose.o) (__sflush_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fgetc.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/platform/Stream.o (fgetc)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fgets.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/platform/Stream.o (fgets)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-findfp.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fclose.o) (__sinit)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fini.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o (__libc_fini_array)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fiprintf.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-assert.o) (fiprintf)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fopen.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_nvm_store.o (fopen)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fputc.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/platform/Stream.o (fputc)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fputs.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/platform/Stream.o (fputs)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fread.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_nvm_store.o (fread)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-freer.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/platform/mbed_alloc_wrappers.o (_free_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fseek.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fopen.o) (_fseek_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fseeko.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fseek.o) (_fseeko_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fstatr.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fseeko.o) (_fstat_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fvwrite.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fputs.o) (__sfvwrite_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fwalk.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-findfp.o) (_fwalk)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fwrite.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_nvm_store.o (fwrite)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-impure.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fflush.o) (_global_impure_ptr)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-init.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o (__libc_init_array)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-isalpha.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/frameworks/greentea-client/source/greentea_test_env.o (isalpha)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-isdigit.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/frameworks/greentea-client/source/greentea_test_env.o (isdigit)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-isspace.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/frameworks/greentea-client/source/greentea_test_env.o (isspace)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-lcltime.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/storage/filesystem/fat/FATFileSystem.o (localtime)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-lcltime_r.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-lcltime.o) (localtime_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-makebuf.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fseeko.o) (__smakebuf_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-malignr.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/platform/mbed_alloc_wrappers.o (_memalign_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-malloc.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/components/wifi/esp8266-driver/ESP8266/ESP8266.o (malloc)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-mallocr.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/platform/mbed_alloc_wrappers.o (_malloc_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-memchr.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_discovery.o (memchr)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-memcmp.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/components/802.15.4_RF/stm-s2lp-rf-driver/source/NanostackRfPhys2lp.o (memcmp)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-memcpy.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/cmsis/TARGET_CORTEX_M/mbed_fault_handler.o (memcpy)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-memmove.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/components/wifi/esp8266-driver/ESP8266/ESP8266.o (memmove)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-memset.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o (memset)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-mktime.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/cellular/framework/AT/AT_CellularSMS.o (mktime)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-month_lengths.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-lcltime_r.o) (__month_lengths)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-openr.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fopen.o) (_open_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-printf.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/mbedtls/src/aes.o (printf)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-putc.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fputc.o) (_putc_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-puts.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/frameworks/mbed-trace/source/mbed_trace.o (puts)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-rand.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/lorawan/lorastack/mac/LoRaMac.o (srand)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-realloc.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/storage/FEATURE_STORAGE/cfstore/source/configuration_store.o (realloc)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-reent.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/platform/mbed_retarget.o (errno)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-refill.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fgets.o) (__srefill_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-rget.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fgetc.o) (__srget_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-sbrkr.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-freer.o) (_sbrk_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-setbuf.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/platform/mbed_retarget.o (setbuf)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-setjmp.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/frameworks/unity/source/unity.o (setjmp)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-setvbuf.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-setbuf.o) (setvbuf)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-snprintf.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/frameworks/mbed-client-cli/source/ns_cmdline.o (snprintf)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-sprintf.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/cellular/framework/AT/ATHandler.o (sprintf)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-sscanf.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/cellular/framework/AT/AT_CellularSMS.o (sscanf)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-stdio.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-findfp.o) (__sread)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-strcat.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_nvm_store.o (strcat)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-strchr.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/cellular/framework/common/CellularUtil.o (strchr)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-strcmp.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/components/wifi/esp8266-driver/ESP8266/ESP8266.o (strcmp)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-strcoll.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/storage/FEATURE_STORAGE/cfstore/source/cfstore_fnmatch.o (strcoll)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-strcpy.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/cellular/framework/AT/ATHandler.o (strcpy)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-strcspn.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/netsocket/nsapi_dns.o (strcspn)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-strlen.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/components/wifi/esp8266-driver/ESP8266/ESP8266.o (strlen)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-strncmp.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/cellular/framework/targets/GEMALTO/CINTERION/GEMALTO_CINTERION_CellularStack.o (strncmp)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-strncpy.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/components/wifi/esp8266-driver/ESP8266Interface.o (strncpy)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-strpbrk.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/storage/kvstore/filesystemstore/FileSystemStore.o (strpbrk)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-strspn.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/storage/FEATURE_STORAGE/cfstore/source/configuration_store.o (strspn)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-strstr.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/cellular/framework/common/CellularUtil.o (strstr)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-strtod.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/frameworks/mbed-client-cli/source/ns_cmdline.o (strtof)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-strtok.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/frameworks/mbed-client-cli/source/ns_cmdline.o (strtok)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-strtok_r.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-strtok.o) (__strtok_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-strtol.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/cellular/framework/AT/ATHandler.o (strtol)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-strtoul.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/frameworks/mbed-client-cli/source/ns_cmdline.o (strtoul)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-svfprintf.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-snprintf.o) (_svfprintf_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-svfscanf.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-sscanf.o) (__ssvfscanf_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-tzcalc_limits.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-lcltime_r.o) (__tzcalc_limits)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-tzlock.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-lcltime_r.o) (__tz_lock)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-tzset.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-lcltime_r.o) (_tzset_unlocked)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-tzset_r.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-tzset.o) (_tzset_unlocked_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-tzvars.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-tzset_r.o) (_timezone)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-vfiprintf.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fiprintf.o) (_vfiprintf_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-vfprintf.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-printf.o) (_vfprintf_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-vfscanf.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/platform/Stream.o (vfscanf)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-vprintf.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/frameworks/mbed-client-cli/source/ns_cmdline.o (vprintf)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-vsnprintf.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/drivers/RawSerial.o (vsnprintf)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-vsprintf.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/drivers/RawSerial.o (vsprintf)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-vsscanf.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/platform/ATCmdParser.o (vsscanf)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-wbuf.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-putc.o) (__swbuf_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-writer.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-stdio.o) (_write_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-wsetup.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fvwrite.o) (__swsetup_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-abort.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-assert.o) (abort)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-closer.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-stdio.o) (_close_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-div.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-mktime.o) (div)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-dtoa.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-svfprintf.o) (_dtoa_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-flags.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fopen.o) (__sflags)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fputwc.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-vfiprintf.o) (_fputwc_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-gdtoa-gethex.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-strtod.o) (__gethex)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-gdtoa-hexnan.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-strtod.o) (__hexnan)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-getenv_r.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-tzset_r.o) (_getenv_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-gettzinfo.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-lcltime_r.o) (__gettzinfo)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-gmtime_r.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-lcltime_r.o) (gmtime_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-isattyr.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-makebuf.o) (_isatty_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-iswspace.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-svfscanf.o) (iswspace)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-locale.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-svfscanf.o) (__locale_mb_cur_max)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-lseekr.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-stdio.o) (_lseek_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-mbrtowc.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-svfscanf.o) (_mbrtowc_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-mbtowc_r.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-mbrtowc.o) (__mbtowc)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-mprec.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-strtod.o) (_Balloc)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-readr.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-stdio.o) (_read_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-sccl.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-svfscanf.o) (__sccl)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-sf_nan.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-strtod.o) (nanf)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-signal.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-abort.o) (raise)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-signalr.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-signal.o) (_kill_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-siscanf.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-tzset_r.o) (siscanf)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-strtoll_r.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-svfscanf.o) (_strtoll_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-strtoull_r.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-svfscanf.o) (_strtoull_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-svfiprintf.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-svfprintf.o) (__ssprint_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-svfiscanf.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-svfscanf.o) (_sungetc_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-ungetc.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-svfiscanf.o) (__submore)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-wcrtomb.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-fputwc.o) (_wcrtomb_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-wctomb_r.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-wcrtomb.o) (__wctomb)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-environ.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-getenv_r.o) (environ)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/libgcc.a(_lshrdi3.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/frameworks/unity/source/unity.o (__aeabi_llsr)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/libgcc.a(_ashldi3.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/mbedtls/src/ssl_tls.o (__aeabi_llsl)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/libgcc.a(_arm_addsubdf3.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/frameworks/unity/source/unity.o (__aeabi_dsub)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/libgcc.a(_arm_muldivdf3.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/cellular/framework/AT/AT_CellularSMS.o (__aeabi_dmul)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/libgcc.a(_arm_cmpdf2.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/cellular/framework/AT/AT_CellularSMS.o (__aeabi_dcmpeq)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/libgcc.a(_arm_fixdfsi.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/cellular/framework/AT/AT_CellularSMS.o (__aeabi_d2iz)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/libgcc.a(_arm_fixunsdfsi.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/lorawan/lorastack/phy/LoRaPHY.o (__aeabi_d2uiz)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/libgcc.a(_arm_truncdfsf2.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-strtod.o) (__aeabi_d2f)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/libgcc.a(_arm_addsubsf3.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/drivers/Timer.o (__aeabi_ul2f)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/libgcc.a(_aeabi_uldivmod.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/components/802.15.4_RF/stm-s2lp-rf-driver/source/rf_configuration.o (__aeabi_uldivmod)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/libgcc.a(_popcountsi2.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/storage/filesystem/littlefs/littlefs/lfs.o (__popcountsi2)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/libgcc.a(_fixunssfdi.o)
+                              BUILD/K64F/GCC_ARM/mbed-os/features/nfc/source/nfc/NFCController.o (__aeabi_f2ulz)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/libgcc.a(bpabi.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/libgcc.a(_aeabi_uldivmod.o) (__gnu_uldivmod_helper)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/libgcc.a(_dvmd_tls.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/libgcc.a(_aeabi_uldivmod.o) (__aeabi_ldiv0)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/libgcc.a(_divdi3.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/libgcc.a(bpabi.o) (__divdi3)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/libgcc.a(_udivdi3.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/libgcc.a(bpabi.o) (__udivdi3)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libnosys.a(getpid.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-signalr.o) (_getpid)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libnosys.a(kill.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-signalr.o) (_kill)
+
+Allocating common symbols
+Common symbol       size              file
+
+lwip_sys_mutex_attr
+                    0x10              BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip-sys/arch/lwip_sys_arch.o
+cached_fast_data    0xc               BUILD/K64F/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_nvm_store.o
+netif_list          0x4               BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/core/lwip_netif.o
+tcp_active_pcbs_changed
+                    0x1               BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/core/lwip_tcp.o
+protocol_6lowpan_rpl_domain
+                    0x4               BUILD/K64F/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Bootstraps/Generic/protocol_6lowpan.o
+activeJournal       0x4               BUILD/K64F/GCC_ARM/mbed-os/features/storage/FEATURE_STORAGE/flash-journal/flash-journal-strategy-sequential/strategy.o
+memp_memory_REASSDATA_base
+                    0xa3              BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/core/lwip_memp.o
+singleton_mutex_obj
+                    0x1c              BUILD/K64F/GCC_ARM/mbed-os/rtos/TARGET_CORTEX/mbed_rtos_rtx.o
+lwip_sys_mutex_data
+                    0x1c              BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip-sys/arch/lwip_sys_arch.o
+memp_memory_TCP_PCB_LISTEN_base
+                    0x73              BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/core/lwip_memp.o
+mtd_k64f_data       0x20              BUILD/K64F/GCC_ARM/mbed-os/targets/TARGET_Freescale/TARGET_MCUXpresso_MCUS/TARGET_MCU_K64F/storage_driver.o
+singleton_mutex_attr
+                    0x10              BUILD/K64F/GCC_ARM/mbed-os/rtos/TARGET_CORTEX/mbed_rtos_rtx.o
+s_saiHandle         0x8               BUILD/K64F/GCC_ARM/mbed-os/targets/TARGET_Freescale/TARGET_MCUXpresso_MCUS/TARGET_MCU_K64F/drivers/fsl_sai.o
+netif_default       0x4               BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/core/lwip_netif.o
+errno               0x4               /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/softfp/libc.a(lib_a-reent.o)
+memp_memory_PBUF_POOL_base
+                    0xbe3             BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/core/lwip_memp.o
+udp_pcbs            0x4               BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/core/lwip_udp.o
+g_xtal32Freq        0x4               BUILD/K64F/GCC_ARM/mbed-os/targets/TARGET_Freescale/TARGET_MCUXpresso_MCUS/TARGET_MCU_K64F/drivers/fsl_clock.o
+memp_memory_NETCONN_base
+                    0x353             BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/core/lwip_memp.o
+memp_memory_IGMP_GROUP_base
+                    0x83              BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/core/lwip_memp.o
+memp_memory_UDP_PCB_base
+                    0xa3              BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/core/lwip_memp.o
+ip_data             0x18              BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/core/lwip_ip.o
+protocol_6lowpan_rpl_root_dodag
+                    0x4               BUILD/K64F/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Bootstraps/Generic/protocol_6lowpan.o
+memp_memory_TCP_PCB_base
+                    0x273             BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/core/lwip_memp.o
+tcp_active_pcbs     0x4               BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/core/lwip_tcp.o
+_main_thread_attr   0x24              BUILD/K64F/GCC_ARM/mbed-os/rtos/TARGET_CORTEX/mbed_rtos_rtx.o
+Unity               0xa0              BUILD/K64F/GCC_ARM/mbed-os/features/frameworks/unity/source/unity.o
+pbuf_free_ooseq_pending
+                    0x1               BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/core/lwip_pbuf.o
+dhcp_rx_options_given
+                    0xa               BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/core/ipv4/lwip_dhcp.o
+memp_memory_FRAG_PBUF_base
+                    0x16b             BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/core/lwip_memp.o
+tls_msg             0x8               BUILD/K64F/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/source/Security/TLS/tls_lib.o
+tcp_input_pcb       0x4               BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/core/lwip_tcp_in.o
+memp_memory_PBUF_base
+                    0x83              BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/core/lwip_memp.o
+singleton_mutex_id  0x4               BUILD/K64F/GCC_ARM/mbed-os/rtos/TARGET_CORTEX/mbed_rtos_rtx.o
+tcp_bound_pcbs      0x4               BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/core/lwip_tcp.o
+tcp_ticks           0x4               BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/core/lwip_tcp.o
+crcTable            0x200             BUILD/K64F/GCC_ARM/mbed-os/targets/TARGET_Freescale/TARGET_MCUXpresso_MCUS/TARGET_MCU_K64F/TARGET_FRDM/crc.o
+lock_tcpip_core     0x30              BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/api/lwip_tcpip.o
+formatInfoSingleton
+                    0x50              BUILD/K64F/GCC_ARM/mbed-os/features/storage/FEATURE_STORAGE/flash-journal/flash-journal-strategy-sequential/support_funcs.o
+mbedtls_cipher_supported
+                    0x48              BUILD/K64F/GCC_ARM/mbed-os/features/mbedtls/src/cipher_wrap.o
+tls_header          0x8               BUILD/K64F/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/source/Security/TLS/tls_lib.o
+g_xtal0Freq         0x4               BUILD/K64F/GCC_ARM/mbed-os/targets/TARGET_Freescale/TARGET_MCUXpresso_MCUS/TARGET_MCU_K64F/drivers/fsl_clock.o
+stdio_uart          0xbc              BUILD/K64F/GCC_ARM/mbed-os/targets/TARGET_Freescale/TARGET_MCUXpresso_MCUS/TARGET_MCU_K64F/serial_api.o
+protocol_timer      0x3c              BUILD/K64F/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/source/NWK_INTERFACE/protocol_timer.o
+_main_obj           0x44              BUILD/K64F/GCC_ARM/mbed-os/rtos/TARGET_CORTEX/mbed_rtos_rtx.o
+cfstore_journal_mtd
+                    0x38              BUILD/K64F/GCC_ARM/mbed-os/features/storage/FEATURE_STORAGE/cfstore/source/configuration_store.o
+protocol_core_monotonic_time
+                    0x4               BUILD/K64F/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/source/NWK_INTERFACE/protocol_core.o
+memp_memory_NETBUF_base
+                    0x83              BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/core/lwip_memp.o
+tcp_tw_pcbs         0x4               BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/core/lwip_tcp.o
+protocol_core_buffers_in_event_queue
+                    0x4               BUILD/K64F/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/source/NWK_INTERFACE/protocol_core.o
+lwip_sys_mutex      0x4               BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip-sys/arch/lwip_sys_arch.o
+tcp_listen_pcbs     0x4               BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/core/lwip_tcp.o
+memp_memory_TCPIP_MSG_INPKT_base
+                    0x83              BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/core/lwip_memp.o
+memp_memory_SYS_TIMEOUT_base
+                    0x103             BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/core/lwip_memp.o
+memp_memory_TCP_SEG_base
+                    0x103             BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/core/lwip_memp.o
+memp_memory_TCPIP_MSG_API_base
+                    0x83              BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/core/lwip_memp.o
+dhcp_rx_options_val
+                    0x28              BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/core/ipv4/lwip_dhcp.o
+netconn_aborted     0x1               BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip/src/api/lwip_api_msg.o
+_main_stack         0x1000            BUILD/K64F/GCC_ARM/mbed-os/rtos/TARGET_CORTEX/mbed_rtos_rtx.o
+protocol_core_multicast_upstream
+                    0x4               BUILD/K64F/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/source/NWK_INTERFACE/protocol_core.o
+lwip_ram_heap       0x820b            BUILD/K64F/GCC_ARM/mbed-os/features/lwipstack/lwip-sys/arch/lwip_sys_arch.o
