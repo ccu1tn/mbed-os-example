@@ -41,7 +41,7 @@ uint8_t image_data[11 * 11 * 96] = IMG_DATA ;//IMG_DATA;
 q7_t out_data[10];
 
 q7_t col_buffer[2*5*5*32*2];
-q7_t scratch_buffer[40960];//96*54*54
+q7_t scratch_buffer[96*54*54];//96*54*54
 
 
 int main(){
