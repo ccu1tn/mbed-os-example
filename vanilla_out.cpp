@@ -1,11 +1,9 @@
-#include "mbed.h"
 #include <stdint.h>
 #include <stdio.h>
 #include "arm_math.h"
-#include "parameter.h"
-#include "weights.h"
+#include "vanilla_weight.h"
 #include "arm_nnfunctions.h"
-//#include "inputs.h"
+
 #ifdef _RTE_
 #include "RTE_Components.h"
 #ifdef RTE_Compiler_EventRecorder
@@ -13,104 +11,147 @@
 #endif
 #endif
 
-static q7_t conv1_wt[3*11*11*96] = CONV1_WT;
-static q7_t conv1_bias[96] = CONV1_BIAS;
+#include "vanilla_input_per_proc.h"
+#include "vanilla_out.h"
+#include "mbed.h"
 
-static q7_t conv2_wt[96*5*5*256] = CONV2_WT;
-static q7_t conv2_bias[256] = CONV2_BIAS;
+Serial pc( USBTX , USBRX );
+static q7_t conv1_wt[200] = CONV1_WT;
+static q7_t conv1_bias[8] = CONV1_BIAS;
 
-static q7_t conv3_wt[256*3*3*384] = CONV3_WT;
-static q7_t conv3_bias[384] = CONV3_BIAS;
+//static q7_t add1_wt[8] = ADD1;
 
-/*static q7_t conv4_wt[384*3*3*384] = CONV4_WT;
-static q7_t conv4_bias[384] = CONV4_BIAS;
+//static q7_t conv2_wt[8*5*5*16] = CONV2_WT;
+//static q7_t conv2_bias[16] = CONV2_BIAS;
 
-static q7_t conv5_wt[384*3*3*256] = CONV5_WT;
-*/
-static q7_t ip1_wt[IP1_DIM * IP1_OUT] = IP1_WT;
-static q7_t ip1_bias[IP1_OUT] = IP1_BIAS;
-/*
-static q7_t ip2_wt[IP2_DIM * IP2_OUT] = IP2_WT;
-static q7_t ip2_bias[IP2_OUT] = IP2_BIAS;
+//static q7_t add2_wt[16] = ADD2;
 
-static q7_t ip3_wt[IP3_DIM * IP3_OUT] = IP3_WT;
-static q7_t ip3_bias[IP3_OUT] = IP3_BIAS;
-static q7_t conv5_bias[256] = CONV5_BIAS;
-*/
-uint8_t image_data[11 * 11 * 96] = IMG_DATA ;//IMG_DATA;
-q7_t out_data[10];
+//static q7_t add3_wt[10] = ADD3;
 
+q7_t output_data[10];
 q7_t col_buffer[2*5*5*32*2];
-q7_t scratch_buffer[96*54*54];//96*54*54
+q7_t scratch_buffer[8*28*28];
+q7_t scratch_buffer2[8*28*28];
 
+  uint8_t image_data[28*28] = {0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   2,   0,   0,
+      2,   1,   0,   6,   0,   0,   7,   0,   0,  10,   0,   0,   0,
+      0,   0,
+     0,   0,   0,   0,   0,   0,   0,   0,   0,   6,   0,   0,   4,
+      0,   0,   5,   0,   1,   1,   8,   0,   2,   2,   0,   0,   0,
+      0,   0,
+     0,   0,   0,   0,   0,   0,   0,   0,   4,   4,   0,   4,   0,
+      0,   4,   0,   0,  10,   0,   0,   0,  10,   0,   2,   0,   0,
+      0,   0,
+     0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
+      0,   0,   0,   0,   0,   0,   6,   0,   0,   5,   2,   0,   0,
+      0,   0,
+     0,   0,   0,   0,   0,   0,   0,   0,   6,   0,   8,   5,  13,
+     17,   8,  38,  90,  89,  18,   2,   0,   0,   0,   0,   0,   0,
+      0,   0,
+     0,   0,   0,   0,   0,   0,   0,   0,   0,   0,  75, 127, 125,
+    126, 122, 126, 126, 127,  22,   3,   0,   2,   0,   4,   0,   0,
+      0,   0,
+     0,   0,   0,   0,   0,   0,   0,   0,   4,  36, 102, 127, 119,
+    122, 127, 127, 126, 124, 100,  99,  28,   0,  10,   0,   0,   0,
+      0,   0,
+     0,   0,   0,   0,   0,   0,   0,   0,   0, 109, 127, 120, 127,
+    124, 125, 126, 125, 127, 127, 121, 112,  24,   0,   6,   0,   0,
+      0,   0,
+     0,   0,   0,   1,   2,   1,   1,   0,   0,  32, 114, 127, 127,
+    122,  60,  17,  20,  55, 125, 127, 124,  62,  10,   0,   0,   0,
+      0,   0,
+     0,   0,   0,   0,   0,   0,   0,   0,   6,   0,  31,  52,  56,
+     58,  17,   0,   0,   0, 100, 122, 127, 127,   0,   6,   0,   0,
+      0,   0,
+     1,   0,   0,   0,   0,   0,   0,   1,   0,   0,   1,   2,   0,
+      6,   0,   4,   3,   0,  38, 122, 127, 127,   2,   0,   0,   0,
+      0,   0,
+     0,   0,   0,   0,   1,   2,   2,   2,   0,   7,   0,   0,   0,
+      4,   0,   1,   0,   0,  17, 127, 127, 126,   5,   5,   0,   0,
+      0,   0,
+     0,   0,   0,   1,   2,   1,   0,   0,   2,   1,   0,   6,   6,
+      0,   0,   0,   3,   6,  50, 127, 127, 124,   8,   6,   0,   0,
+      0,   0,
+     0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   2,
+      3,   6,   0,   0,   8,  92, 124, 127, 122,   6,   0,   0,   0,
+      0,   0,
+     2,   1,   0,   0,   0,   0,   1,   2,   2,   0,   6,   0,  26,
+     47,  42,   2,   2,  12, 123, 123, 127, 104,   0,   4,   0,   0,
+      0,   0,
+     2,   0,   0,   0,   0,   4,   8,  10,  50,  52,  91,  94, 118,
+    126, 126,  96,  95, 114, 122, 126, 105,   9,   4,   0,   0,   0,
+      0,   0,
+     0,   2,   0,   0,  16,  54,  92, 124, 127, 121, 127, 122, 127,
+    127, 121, 126, 127, 120, 127, 127, 109,  62,   4,   0,   0,   0,
+      0,   0,
+     1,   0,   0,   0,  64, 127, 118, 127, 127, 124, 114, 106, 121,
+    125, 127, 127, 124, 127, 126, 124, 127, 122,  85,   6,   0,   0,
+      0,   0,
+     0,   6,   0,   4, 126, 127, 127, 116, 101,  42,   0,  26,  98,
+    119, 127, 114, 119,  71,  54,  96, 127, 120, 127,  90,   0,   0,
+      0,   0,
+     3,   0,  11,   0, 122, 122, 127, 127, 108, 118, 113, 106, 122,
+    126, 127, 120,  38,   0,   0,  10,  91, 124, 120, 122,   0,   0,
+      0,   0,
+     0,   0,   0,   2,  82, 126, 127, 122, 127, 121, 126, 125, 127,
+     98,  54,  30,   0,   9,   1,   3,   0,  27, 127,  79,   0,   0,
+      0,   0,
+     0,  12,   0,   0,   3,  17,  84,  97,  88,  92,  82,  22,   1,
+      5,   3,   3,   0,   0,   2,   0,   0,   0,   7,   1,   0,   0,
+      0,   0,
+     5,   0,   7,   0,   6,   0,   2,   0,   0,   0,   3,   0,   4,
+      0,   0,   0,   4,   0,   5,   0,   2,   0,   0,   5,   0,   0,
+      0,   0,
+     0,   7,   0,   2,   0,   0,  12,   0,   0,   4,   0,   0,   4,
+      0,   6,   0,   0,   0,   0,   1,   0,   0,   4,   0,   0,   0,
+      0,   0,
+     0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
+      0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
+      0,   0,
+     0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
+      0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
+      0,   0,
+     0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
+      0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
+      0,   0,
+     0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
+      0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
+      0,   0
+};
 
-int main(){
+void vanilla_main(bool input_pre_proc){
   #ifdef RTE_Compiler_EventRecorder
     EventRecorderInitialize (EventRecordAll, 1);
   #endif
 
   printf("start execution\n");
   q7_t *img_buffer1 = scratch_buffer;
-  q7_t *img_buffer2 = img_buffer1+ 32*32*32;
+  q7_t *img_buffer2 = scratch_buffer;
 
-  int mean_data[3] = INPUT_MEAN_SHIFT;
-  unsigned int scale_data[3] = INPUT_RIGHT_SHIFT;
-  /*for(int i = 0 ; i < 32*32*3 ; i += 3){
-    img_buffer[i] = (q7_t)__SSAT( ((((int)image_data[i] - mean_data[0]<<7) + (0x1<<(scale_data[0]-1))) >> scale_data[0], 8);
-    img_buffer[i+1] = (q7_t)__SSAT( ((((int)image_data[i+1] - mean_data[1]<<7) + (0x1<<(scale_data[1]-1))) >> scale_data[1], 8);
-    img_buffer[i+2] = (q7_t)__SSAT( ((((int)image_data[i+2] - mean_data[2]<<7) + (0x1<<(scale_data[2]-1))) >> scale_data[2], 8);
-  }*/
-// phan sua
-  for(int i=0; i<32*32*3; i+=3) {
-    //image_data[i] = (q7_t)__SSAT( ((int)(image_data[i] - mean[i]) >> DATA_RSHIFT), 8);
-    image_data[i] = (q7_t)__SSAT( ((((int)image_data[i]  - mean_data[0])<<7) + (0x1<<(scale_data[0]-1))) 
-    >> scale_data[0], 8);
-    image_data[i+1] = (q7_t)__SSAT(((((int)image_data[i+1]- mean_data[1])<<7) + (0x1<<(scale_data[1]-1))) 
-    >> scale_data[1], 8);
-    image_data[i+2] = (q7_t)__SSAT(((((int)image_data[i+2]- mean_data[2])<<7) + (0x1<<(scale_data[2]-1))) 
-    >> scale_data[2], 8);
+  if(input_pre_proc){
+    per_processing(image_data , img_buffer2);
   }
 
-  arm_convolve_HWC_q7_fast(img_buffer2,224,3,conv1_wt,96,11,0,4,conv1_bias,0,11,img_buffer1,54, (q15_t*)col_buffer, NULL);
+  arm_convolve_HWC_q7_fast( img_buffer2,28,1,conv1_wt,8,5,0,1,conv1_bias,0,9,img_buffer1,28,(q15_t *)col_buffer,NULL );
 
-  arm_relu_q7( img_buffer1,96 * 54 * 54 ); //CONV1_OUT_DIM * CONV1_OUT_DIM * CONV1_OUT_CH
+  //Add(img_buffer1,add1_wt);
+/*
+  arm_relu_q7( img_buffer2,8 * 28 * 28 );
 
-  arm_maxpool_q7_HWC( img_buffer1,54,96,3,0,2,26,NULL,img_buffer2 );
+  arm_maxpool_q7_HWC( img_buffer2,28,8,2,0,2,14,NULL,img_buffer1 );
 
-  arm_convolve_HWC_q7_fast( img_buffer2,26,96,conv2_wt,256,5,2,1,conv2_bias,CONV1_BIAS_LSHIFT,CONV2_OUT_RSHIFT,img_buffer1,26,(q15_t *)col_buffer,NULL );
+  arm_convolve_HWC_q7_basic( img_buffer1,14,8,conv2_wt,16,5,0,1,conv2_bias,left_shift of bias,right_shift of output,img_buffer2,14,(q15_t *)col_buffer,NULL );
 
-  arm_relu_q7( img_buffer1, 256 * 26 * 26 );
+  Add(img_buffer2,add2_wt);
 
-  arm_maxpool_q7_HWC( img_buffer1,26,256,3,0,2,12,NULL,img_buffer2 );
+  arm_relu_q7( img_buffer1,16 * 14 * 14 );
 
-  arm_convolve_HWC_q7_fast( img_buffer2,12,256,conv3_wt,384,3,1,1,conv3_bias,CONV3_BIAS_LSHIFT,CONV3_OUT_RSHIFT,img_buffer1,12,(q15_t *)col_buffer,NULL );
+  arm_maxpool_q7_HWC( img_buffer1,14,16,3,0,3,4,NULL,img_buffer2 );
 
-  arm_relu_q7( img_buffer1,384 * 12 * 12 );
-
-  //arm_convolve_HWC_q7_fast( img_buffer1,12,384,conv4_wt,384,3,1,1,conv4_bias,left-shift of bias,right-shift of output,img_buffer2,12,(q15_t *)col_buffer,NULL );
-
-  arm_relu_q7( img_buffer2,384 * 12 * 12 );
-
-  //arm_convolve_HWC_q7_fast( img_buffer2,12,384,conv5_wt,256,3,1,1,conv5_bias,left-shift of bias,right-shift of output,img_buffer1,12,(q15_t *)col_buffer,NULL );
-
-  arm_relu_q7( img_buffer1,256 * 12 * 12 );
-
-  arm_maxpool_q7_HWC( img_buffer1,12,256,3,0,2,6,NULL,img_buffer2 );
-
-  arm_fully_connected_q7_opt(img_buffer2,ip1_wt,IP1_DIM,10,IP1_BIAS_LSHIFT,IP1_OUT_RSHIFT,ip1_bias,out_data,(q15_t *)img_buffer1);
-
-  arm_relu_q7( img_buffer1,4096 * 1 * 1 );
-
-  //arm_fully_connected_q7_opt(img_buffer1,ip1_wt,IP_DIM,10,IP2_BIAS_LSHIFT,IP2_OUT_RSHIFT,ip2_bias,out_data,(q15_t *)img_buffer2);
-
-  arm_relu_q7( img_buffer2,4096 * 1 * 1 );
-
-  //arm_fully_connected_q7_opt(img_buffer2,ip1_wt,IP3_DIM,10,IP3_BIAS_LSHIFT,IP3_OUT_RSHIFT,ip3_bias,out_data,(q15_t *)img_buffer1);
-
-  arm_softmax_q7(out_data,10,out_data);
+  Add(img_buffer2,add3_wt);
 
   for(int i = 0; i < 10 ; i++){
-    printf( "%d: %d\n", i , out_data[i] );
+    printf( "%d: %d\n", i , output_data[i] );
   }
-  return 0;
+  */
 }

@@ -1,7 +1,9 @@
+#include "vanilla_out.h"
 int main()
 {
-	void mean_subtract();
-    void run_nn();
+	//mean_subtract();
+    //run_nn();
+    vanilla_main(false);
 	/* code */
 	return 0;
 }
